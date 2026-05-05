@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(44, 60, 138);
+            color: rgb(220, 220, 220);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+        }
+        h1{
+            text-align: center;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.605);
+            margin-bottom: 50px;
+        }
+
+        main{
+            background-color: white;
+            color: black;
+            padding: 10px;
+            border-radius: 8px;
+            max-width: 800px;
+            margin: auto;
+            box-shadow: 2px 2px 20px black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+
+    <main>
+        <p>Aqui vai o resultado</p>
+        <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+
+        <div id="msg" name="msg">
+            <p>Clique em mim</p>
+        </div>
+    </main>
+
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1];
+        //window.document.write('Está escrito assim: '+ p1.innerText);
+        //corpo.style.backgroundColor = 'gray';
+        //p1.style.color = 'blue';
+        
+        /*
+        var d = window.document.getElementById('msg');
+        d.style.backgroundColor = 'green';
+        d.innerText = 'Estou Aguardando...'
+        */
+
+        // var d = window.document.getElementsByName('msg')[0];
+        //d.innerText = 'olá';
+
+        var d = window.document.querySelector('div#msg');
+        d.style.color = 'darkred';
+    </script>
+</body>
+</html>
