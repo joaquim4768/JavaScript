@@ -37,19 +37,11 @@ footer{
     font-style: italic;
 }
 
-div#msg{
-    margin-bottom: 15px;
-    text-align: center;
+div#input{
+    display: block;
+    margin-bottom: 20px;
 }
-
-div#foto{
-    display: flex;
-    justify-content: center;
-}
-
-div#foto img#imagem{
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
+input[type="button"]{
+    margin-left: 10px;
+    padding: 1px;
 }
